@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide helps students discover campus events and register.">
+  <title>Event Details | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: check the box to switch the site theme. -->
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Campus <span>Events Guide</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="event-details.html" aria-current="page">Event Details</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html">Register</a>
+      </nav>
+      <label class="theme-control" for="theme-toggle">🌙 Dark mode</label>
+    </div>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content" class="container">
+    <section class="page-intro">
+      <span class="eyebrow">Featured event</span>
+      <h1>Zewail City Tech Fest</h1>
+      <p>A campus celebration of innovation, creativity, and student-led technology projects.</p>
+    </section>
+    <div class="two-column">
+      <div class="panel">
+        <img class="detail-poster" src="assets/tech-fest.svg" alt="Zewail City Tech Fest blue and teal poster">
+        <div class="meta"><span>📅 Sunday, November 15, 2026</span><span>🕙 10:00 AM–4:00 PM</span><span>📍 Main Campus Hall</span></div>
+        <h2>About the event</h2>
+        <p>Zewail City Tech Fest is a sample student event designed to bring campus innovators together. Visitors can explore project demonstrations, discover new ideas, and talk with students about the work behind their projects.</p>
+        <h2>Event agenda</h2>
+        <div class="table-wrap">
+          <table class="agenda">
+            <thead><tr><th scope="col">Time</th><th scope="col">Activity</th></tr></thead>
+            <tbody>
+              <tr><td>10:00 AM</td><td>Welcome and opening remarks</td></tr>
+              <tr><td>10:30 AM</td><td>Student innovation showcase</td></tr>
+              <tr><td>12:00 PM</td><td>Robotics and interactive demos</td></tr>
+              <tr><td>1:00 PM</td><td>Break and student networking</td></tr>
+              <tr><td>2:00 PM</td><td>Lightning talks and project stories</td></tr>
+              <tr><td>3:30 PM</td><td>Closing and awards</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2>Entry information</h2>
+        <p>Sample entry policy: free for registered students. Bring your student ID. Registration is for demonstration only and does not send data to a server.</p>
+        <div class="media-box">
+          <h2>Event audio preview</h2>
+          <p>A short original chime is included as a playable local audio example.</p>
+          <audio controls>
+            <source src="assets/badla.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="form-actions"><a class="button button-primary" href="registration.html">Register for Tech Fest</a><a class="button button-outline" href="schedule.html">See timetable</a></p>
+      </div>
+      <aside class="info-card">
+        <h2>Event at a glance</h2>
+        <p><strong>Date:</strong> November 15, 2026</p>
+        <p><strong>Time:</strong> 10:00 AM–4:00 PM</p>
+        <p><strong>Venue:</strong> Main Campus Hall</p>
+        <p><strong>Category:</strong> Technology & Innovation</p>
+        <p><strong>Entry:</strong> Free with registration (sample details)</p>
+        <div class="notice">Please note: this is a coursework concept. Event information is fictional and is not an official university announcement.</div>
+      </aside>
+    </div>
+
+    <section class="form-card section-spaced" aria-labelledby="review-heading">
+      <h2 id="review-heading">Leave an event review</h2>
+      <p class="small-note">Share feedback about the event concept. This form demonstrates HTML5 validation and does not submit to a server.</p>
+      <form action="#" method="get">
+        <div class="form-grid">
+          <div class="field">
+            <label for="review-name">Your name</label>
+            <input id="review-name" name="review-name" type="text" required maxlength="60" pattern="[A-Za-z ]{2,60}" title="Use 2 to 60 English letters and spaces.">
+          </div>
+          <div class="field">
+            <label for="review-email">Email address</label>
+            <input id="review-email" name="review-email" type="email" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="review-rating">Rating</label>
+            <select id="review-rating" name="review-rating" required>
+              <option value="">Choose a rating</option><option>Excellent</option><option>Very good</option><option>Good</option><option>Fair</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="review-file">Upload a related file (optional)</label>
+            <input id="review-file" name="review-file" type="file" accept=".jpg,.jpeg,.png,.pdf">
+          </div>
+          <div class="field field-full">
+            <label for="review-message">Your review</label>
+            <textarea id="review-message" name="review-message" rows="4" required maxlength="500" placeholder="What did you enjoy or what could be improved?"></textarea>
+          </div>
+        </div>
+        <div class="form-actions"><button class="button button-primary" type="submit">Submit review</button></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Campus Events Guide · Student campus life, connected.</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

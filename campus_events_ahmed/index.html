@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide helps students discover campus events and register.">
+  <title>Home | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: check the box to switch the site theme. -->
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Campus <span>Events Guide</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="events.html">Events</a>
+      <a href="event-details.html">Event Details</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html">Register</a>
+      </nav>
+      <label class="theme-control" for="theme-toggle">🌙 Dark mode</label>
+    </div>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content" class="container">
+    <section class="hero" aria-labelledby="home-title">
+      <span class="eyebrow">Discover · Connect · Participate</span>
+      <h1 id="home-title">Your campus. Your community. Your next big event.</h1>
+      <p>Find workshops, student activities, talks, and creative experiences happening around campus. Explore the details and save a place at the events you love.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="events.html">Explore all events</a>
+        <a class="button button-outline" href="schedule.html">View timetable</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <div class="section-heading">
+        <div><h2 id="featured-heading">Featured campus events</h2><p>Something exciting is always happening.</p></div>
+        <a href="events.html">Browse catalogue →</a>
+      </div>
+      <div class="card-grid">
+        <article class="event-card">
+          <img class="event-image" src="assets/tech-fest.svg" alt="Abstract blue and teal technology festival poster">
+          <div class="card-body"><span class="tag">Technology</span><h3>Zewail City Tech Fest</h3>
+            <div class="meta"><span>📅 Nov 15, 2026</span><span>📍 Main Campus Hall</span></div>
+            <p>A day of student innovation, robotics demos, creative projects, and inspiring talks.</p>
+            <a class="button button-primary" href="event-details.html">View details</a>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-image" src="assets/culture-night.svg" alt="Illustrated colorful campus culture night poster">
+          <div class="card-body"><span class="tag">Culture</span><h3>Campus Culture Night</h3>
+            <div class="meta"><span>📅 Nov 20, 2026</span><span>📍 Student Plaza</span></div>
+            <p>Celebrate music, food, art, and the many cultures in our student community.</p>
+            <a class="button button-primary" href="event-details.html">View details</a>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-image" src="assets/wellness-day.svg" alt="Illustrated green wellness and sports day poster">
+          <div class="card-body"><span class="tag">Wellbeing</span><h3>Wellness & Sports Day</h3>
+            <div class="meta"><span>📅 Oct 10, 2026</span><span>📍 Sports Ground</span></div>
+            <p>Join friendly games, movement sessions, and activities focused on wellbeing.</p>
+            <a class="button button-primary" href="event-details.html">View details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel section-spaced" aria-labelledby="how-heading">
+      <h2 id="how-heading">Make the most of campus life</h2>
+      <ul>
+        <li>Explore upcoming and past events in one catalogue.</li>
+        <li>Check dates, times, venues, and the event agenda before attending.</li>
+        <li>Register for the featured event using the registration form.</li>
+      </ul>
+      <p><a href="registration.html">Ready to join Tech Fest? Register here →</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Campus Events Guide · Student campus life, connected.</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

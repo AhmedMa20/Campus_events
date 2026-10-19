@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide helps students discover campus events and register.">
+  <title>Event Timetable | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: check the box to switch the site theme. -->
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Campus <span>Events Guide</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="event-details.html">Event Details</a>
+      <a href="schedule.html" aria-current="page">Schedule</a>
+      <a href="registration.html">Register</a>
+      </nav>
+      <label class="theme-control" for="theme-toggle">🌙 Dark mode</label>
+    </div>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content" class="container">
+    <section class="page-intro">
+      <span class="eyebrow">Dates and locations</span>
+      <h1>Campus event timetable</h1>
+      <p>Use this timetable to plan your campus activities. The featured event's details match the event pages.</p>
+    </section>
+    <section aria-labelledby="schedule-heading">
+      <div class="section-heading"><div><h2 id="schedule-heading">Upcoming and recent events</h2><p>Scroll horizontally on small screens if needed.</p></div></div>
+      <div class="table-wrap">
+        <table class="schedule-table">
+          <thead><tr><th scope="col">Event</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Venue</th></tr></thead>
+          <tbody>
+            <tr><td><a href="event-details.html">Zewail City Tech Fest</a></td><td>November 15, 2026</td><td>10:00 AM–4:00 PM</td><td>Main Campus Hall</td></tr>
+            <tr><td><a href="event-details.html">Campus Culture Night</a></td><td>November 20, 2026</td><td>5:00 PM–9:00 PM</td><td>Student Plaza</td></tr>
+            <tr><td>Wellness &amp; Sports Day</td><td>October 10, 2026</td><td>9:00 AM–1:00 PM</td><td>Sports Ground</td></tr>
+            <tr><td>Student Research Talks</td><td>September 28, 2026</td><td>12:00 PM–3:00 PM</td><td>Lecture Room A</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small-note">Event names, dates, and locations are sample coursework data.</p>
+      <div class="form-actions"><a class="button button-primary" href="registration.html">Register for Tech Fest</a><a class="button button-outline" href="events.html">Browse events</a></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Campus Events Guide · Student campus life, connected.</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

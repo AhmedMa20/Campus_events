@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide helps students discover campus events and register.">
+  <title>Registration | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: check the box to switch the site theme. -->
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Campus <span>Events Guide</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="event-details.html">Event Details</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html" aria-current="page">Register</a>
+      </nav>
+      <label class="theme-control" for="theme-toggle">🌙 Dark mode</label>
+    </div>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content" class="container">
+    <section class="page-intro">
+      <span class="eyebrow">Save your place</span>
+      <h1>Register for Zewail City Tech Fest</h1>
+      <p><strong>Event date:</strong> Sunday, November 15, 2026 · <strong>Time:</strong> 10:00 AM–4:00 PM</p>
+      <p><strong>Venue:</strong> Main Campus Hall</p>
+    </section>
+    <div class="two-column">
+      <section class="form-card">
+        <h2>Attendee registration form</h2>
+        <p class="small-note">Fields marked required must be completed. Your browser checks the input format. This demo does not save or send submissions.</p>
+        <form action="#" method="get">
+          <div class="form-grid">
+            <div class="field">
+              <label for="attendee-name">Attendee name *</label>
+              <input id="attendee-name" name="attendee-name" type="text" required minlength="2" maxlength="60" pattern="[A-Za-z ]{2,60}" title="Use 2 to 60 English letters and spaces." autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="attendee-email">Email address *</label>
+              <input id="attendee-email" name="attendee-email" type="email" required maxlength="100" autocomplete="email" placeholder="name@example.com">
+            </div>
+            <div class="field">
+              <label for="portfolio-url">Portfolio or LinkedIn URL</label>
+              <input id="portfolio-url" name="portfolio-url" type="url" placeholder="https://example.com" maxlength="200">
+            </div>
+            <div class="field">
+              <label for="guest-count">Number of guests *</label>
+              <input id="guest-count" name="guest-count" type="number" min="0" max="5" value="0" required>
+            </div>
+            <div class="field">
+              <label for="interest">How excited are you? (1–10)</label>
+              <input id="interest" name="interest" type="range" min="1" max="10" value="8">
+            </div>
+            <div class="field">
+              <label for="arrival-date">Arrival date *</label>
+              <input id="arrival-date" name="arrival-date" type="date" min="2026-11-15" max="2026-11-15" required>
+            </div>
+            <div class="field">
+              <label for="badge-color">Choose your badge color</label>
+              <input id="badge-color" name="badge-color" type="color" value="#2457d6">
+            </div>
+            <div class="field">
+              <label for="arrival-time">Expected arrival time *</label>
+              <input id="arrival-time" name="arrival-time" type="time" min="10:00" max="16:00" required>
+            </div>
+            <div class="field field-full">
+              <label for="student-card">Student ID or supporting file (optional)</label>
+              <input id="student-card" name="student-card" type="file" accept=".jpg,.jpeg,.png,.pdf">
+            </div>
+            <fieldset class="field field-full">
+              <legend>Attendance type *</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="attendance-type" value="full-day" required> Full day</label>
+                <label><input type="radio" name="attendance-type" value="morning"> Morning only</label>
+                <label><input type="radio" name="attendance-type" value="afternoon"> Afternoon only</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="event-choice">Choose an event *</label>
+              <select id="event-choice" name="event-choice" required>
+                <option value="">Select an event</option>
+                <option value="tech-fest" selected>Zewail City Tech Fest</option>
+                <option value="culture-night">Campus Culture Night</option>
+                <option value="wellness-day">Wellness &amp; Sports Day</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="access-needs">Access needs</label>
+              <select id="access-needs" name="access-needs">
+                <option value="none">No additional needs</option>
+                <option value="step-free">Step-free access</option>
+                <option value="hearing">Hearing support</option>
+                <option value="other">Other / please explain below</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="special-requests">Notes or access requirements</label>
+              <textarea id="special-requests" name="special-requests" rows="4" maxlength="500" placeholder="Tell us about any requirements (maximum 500 characters)."></textarea>
+            </div>
+            <div class="field field-full">
+              <label><input type="checkbox" name="updates" value="yes"> I would like to receive future campus event updates.</label>
+            </div>
+            <div class="field field-full">
+              <label><input type="checkbox" name="terms" value="accepted" required> I confirm that the information above is correct. *</label>
+            </div>
+          </div>
+          <div class="form-actions"><button class="button button-primary" type="submit">Submit registration</button><button class="button button-outline" type="reset">Reset form</button></div>
+        </form>
+      </section>
+      <aside class="info-card">
+        <h2>Event contact</h2>
+        <p><strong>Team:</strong> Campus Events Guide student team</p>
+        <p><strong>Email:</strong> <a href="mailto:events@example.com">events@example.com</a></p>
+        <p><strong>Venue:</strong> Main Campus Hall</p>
+        <div class="notice">This is a coursework prototype. The contact email and event details are examples, not official university contact information.</div>
+        <h2>Before you register</h2>
+        <ul>
+          <li>Check the event date and arrival time.</li>
+          <li>Use a valid email address.</li>
+          <li>Complete all required fields.</li>
+          <li>Registration data is not stored or sent.</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Campus Events Guide · Student campus life, connected.</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
